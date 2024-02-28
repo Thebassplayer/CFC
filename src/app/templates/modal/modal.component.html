@@ -1,0 +1,75 @@
+<ng-template [ngIf]="emailOk==0">
+	<div class="modal-header">
+		<button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+	</div>
+	<section class="p-5">
+		<h4 class="h4-sifon">
+			Hola! Déjanos tus datos para conocer más acerca del método. 
+		</h4>
+		<p class="peque">Te enviaremos información acerca de cursos, horarios de clases online en vivo, capacitaciones y otros.</p>
+		<form [formGroup]="emailForm" (ngSubmit)="onSubmit()" ngNativeValidate>
+			<div class="mb-3">
+				<input formControlName="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
+				<div *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)"  class="alert alert-danger mt-1" role="alert">
+					<div *ngIf="nombre.errors?.['required']">
+						Se requiere el Nombre.
+					</div>
+					<div *ngIf="nombre.errors?.['minlength']">
+						Debe tener más de 4 letras
+					</div>
+				</div>
+			</div>
+			<div class="mb-3">
+				<input formControlName="email" type="email" class="form-control" id="email" placeholder="Email">
+				<div *ngIf="email.invalid && (email.dirty || email.touched)"  class="alert alert-danger mt-1" role="alert">
+					<div *ngIf="email.errors?.['required']">
+						Se requiere el Email.
+					</div>
+					<div *ngIf="email.errors?.['email']">
+						No parece ser un Email...
+					</div>
+				</div>
+			</div>
+			<div class="mb-3">
+				<input formControlName="celular" type="text" class="form-control" id="celular" placeholder="Número de teléfono">
+				<div *ngIf="celular.invalid && (celular.dirty || celular.touched)"  class="alert alert-danger mt-1" role="alert">
+					<div *ngIf="celular.errors?.['required']">
+						Se requiere el Teléfono.
+					</div>
+					<div *ngIf="celular.errors?.['minlength']">
+						Debe tener más números
+					</div>
+				</div>
+			</div>
+			<div class="form-check form-check-reverse">
+				<label class="form-check-label text-start peque" for="reverseCheck1">
+					Por favor, si desea recibir más información o ponerse en contacto con CFC haz click en
+					esta casilla
+				</label>
+				<input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+			</div>
+			<button class="btn-amarillo mt-1 pointer w-100">Enviar</button>
+			<app-loader *ngIf="enviando" [texto]="'Enviando...'"></app-loader>
+		</form>
+	</section>
+</ng-template>
+
+<ng-template [ngIf]="emailOk==1">
+	<section class="p-5">
+		<h4 class="h4-sifon py-3">
+			¡Gracias! Estarás recibiendo la información en la brevedad.
+		</h4>
+		<p class="peque">En caso de no recibir nada en el trascurso de las proximas 24hs, vuelve a cargar tus datos y verificá que sean correctos.</p>
+		<button class="btn-amarillo mt-1 pointer w-100" (click)="activeModal.close()">Cerrar</button>
+	</section>
+</ng-template>
+
+<ng-template [ngIf]="emailOk==2">
+	<section class="p-5">
+		<h4 class="h4-sifon py-3">
+			Lo sentimos...
+		</h4>
+		<p class="peque">Hemos tenido un inconveniente al enviar el email...</p>
+		<button class="btn-amarillo mt-1 pointer w-100" (click)="activeModal.close()">Cerrar</button>
+	</section>
+</ng-template>

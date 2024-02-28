@@ -1,0 +1,10 @@
+.linea{
+    background-color: var(--amarillo);
+    width: 15rem;
+    height: 0.3rem;
+    margin: 0 auto;
+}
+button{
+    border: none;
+    background-color: transparent;
+}

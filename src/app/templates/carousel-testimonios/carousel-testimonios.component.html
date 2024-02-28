@@ -1,0 +1,17 @@
+<ngb-carousel *ngIf="testimonios" class="mt-5 px-md-5">
+	<ng-template ngbSlide *ngFor="let t of testimonios">
+		<div class="row g-0 justify-content-center align-items-end m-md-3 p-md-3 bg-gris radio shadow-rafa m-2">
+            <div class="col-md-6 col-12 order-2 order-md-1">
+                <div class="picsum-img-wrapper">
+                    <img [src]="t.img" alt="testimonio de {{t.nombre}}" width="527" height="406" class="img-fluid p-3 p-md-0" />
+                </div>
+            </div>
+            <div class="col-md-6 col-12  order-1 order-md-2 p-4">
+                <h4 class="claro ">{{t.nombre}}</h4>
+                <P class="gris">{{t.edad}}</P>
+                <p class="gris">"{{t.texto}}"</p>
+            </div>
+        </div>
+	</ng-template>
+    
+</ngb-carousel>

@@ -1,1 +1,224 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: BebasNeue;
+    src: url('../src/assets/fonts/BebasNeue-Regular.otf');
+  }
+@font-face {
+    font-family: Sifonn;
+    src: url('../src/assets/fonts/SIFONN_PRO.otf');
+}
+@font-face {
+    font-family: Helvetica;
+    src: url('../src/assets/fonts/helveticaneue.ttf');
+}
+@font-face {
+    font-family: HelveticaM;
+    src: url('../src/assets/fonts/HelveticaMedium.otf');
+}
+
+
+:root{
+    --violeta:#300133;
+    --amarillo:#FFCB20;
+    --lavanda:#838AE6;
+    --claro:#6C3BC5;
+    --morado:#5A0C8F;
+    --gris:#606060;
+    --celeste: #9BA7E8;
+    --fondo-gris:#F1F1F1;
+}
+
+h1{
+    font-family: 'Sifonn';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 2.7rem;
+}
+h3{
+    font-family: 'Sifonn';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height:  3rem;
+}
+h4{
+    font-family: 'BebasNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height:  1.5rem;
+    letter-spacing: 1px;
+}
+.h4-sifon{
+    font-family: 'Sifonn';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height:  2rem;
+    letter-spacing: 1px;
+    color: var(--morado) !important;
+}
+
+p{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+.peque{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.amarillo{
+    color: var(--amarillo);
+}
+.white{
+    color: #FFFFFF;
+}
+.celeste{
+    color: var(--celeste);
+}
+.violeta{
+    color: var(--violeta);
+}
+.claro{
+    color: var(--claro);
+}
+.gris{
+    color:var(--gris);
+}
+.morado{
+    color:var(--morado);
+}
+.blanco{
+    color:white;
+}
+
+.blanco-lavanda{
+    color:white;
+}
+
+.bg-lavanda{
+    background-color: var(--lavanda);
+}
+.bg-lavanda-blanco{
+    background-color: var(--lavanda);
+}
+.bg-gris{
+    background-color: #F1F1F1;
+}
+
+.bg-celeste{
+    background-color: var(--celeste);
+    width: 100%;
+}
+.btn-amarillo{
+    padding: 1rem 3rem;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--amarillo);
+    color: var(--claro);
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+    font-family: 'HelveticaM';
+    letter-spacing: 1px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.borde-amarillo-abajo{
+    margin-top: 1rem;
+    width: 2rem;
+    padding: 0.3rem 2rem;
+    background-color: var(--amarillo);
+    border-radius: 1px;
+}
+.helvetica{
+    font-family: Helvetica;
+}
+.bebas{
+    font-family: 'BebasNeue';
+}
+
+.l-chica{
+    font-size: 14px;
+}
+
+.aire{
+    padding: 5rem 0rem;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 764px) {
+    h1{
+        font-family: 'Sifonn';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+    h3{
+        font-family: 'Sifonn';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height:  2.2rem;
+    }
+    h4{
+        font-family: 'BebasNeue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height:  1.5rem;
+    }
+    p{
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .btn-amarillo{
+        padding: 1rem 3rem;
+        text-align: center;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--amarillo);
+        color: var(--claro);
+        filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+        font-family: 'HelveticaM';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 18px;
+        width: 100%;
+    }
+    .borde-amarillo-abajo{
+        margin-top: 1rem;
+        width: 2rem;
+        padding: 0.2rem 3rem;
+        background-color: var(--amarillo);
+        border-radius: 1px;
+    }
+    .bg-lavanda-blanco{
+        background-color: white;
+    }
+    .aire{
+        padding: 1rem 0rem;
+    }
+    .blanco-lavanda{
+        color:var(--lavanda);
+    }
+}

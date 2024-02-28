@@ -1,0 +1,27 @@
+.ubicacion{
+    position: absolute;
+    left: 5%;
+    bottom: 8%;
+    width: 40%;
+}
+.mt-10{
+    margin-top: 5rem;
+}
+
+
+@media screen and (max-width: 764px) {
+    .container{
+        padding: 0 !important;
+    }
+    
+    .ubicacion{
+        position: absolute;
+        left: 0;
+        bottom: 2%;
+        width: 60%;
+        padding: 1rem;
+    }
+    .h4-solo{
+        font-size: 16px;
+    }
+}

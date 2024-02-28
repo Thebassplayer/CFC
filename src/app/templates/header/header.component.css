@@ -1,0 +1,58 @@
+
+.bg-header{
+    background: url('../../../assets/img/imagen-portada.png');
+    background-position: center;
+    
+    background-size: contain;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    /*border: 3px black solid;*/
+    position: relative;
+}
+
+.ubicacion{
+    position: absolute;
+    left: 0%;
+    bottom: 15%;
+    width: 40%;
+    /*border: 1px red solid;*/
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-family: 'BebasNeue';
+    text-align: end;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    /*border: 1px red solid;*/
+}
+
+.logo{
+    width: 197px;
+    height: auto;
+}
+
+@media screen and (max-width: 764px) {
+    
+    .bg-header{
+        background: url('../../../assets/img/mobile/header-mobile.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 100%;
+        min-height: 100vh;
+       /* border: 1px solid red;*/
+    }
+    
+    .ubicacion{
+        position: absolute;
+        bottom: 9%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+    .logo{
+        width: 120px;
+        height: auto;
+    }
+}

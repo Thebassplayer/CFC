@@ -1,0 +1,36 @@
+<section class="container">
+    <div class="row g-0 justify-content-start aire">
+        <div class="col-md-4 pt-md-4 ps-md-4 pt-3">
+            <img ngSrc="assets/img/iconos/iconos-1.png" width="86" height="85" class="img-fluid mb-4 mx-auto d-block"/>
+            <h4 class="claro text-center">
+                ¿Cómo se formó el método?
+            </h4>
+            <p class="gris">
+                El método se crea a raíz de una profunda investigación del cuerpo humano con el objetivo de trascender la idea preconcebida de que, un diagnóstico o lesión nos obligue a abandonar la práctica de movimiento.
+                <span #collapse="ngbCollapse" [(ngbCollapse)]="!isCollapsed">“Dónde está tu atención, está tu energía”A lo largo de los años fuimos integrando herramientas que nos permitieron ampliar nuestro registro propioceptivo y autoconocimiento. Gracias a esa búsqueda, desafiamos y traspasamos los límites, demostrándose una vez más que el cuerpo puede llevar consigo la “solución” de los “problemas” que se nos presenten.</span>
+                <br/>
+                <button href="#" role="button" class="celeste" alt="ver mas" (click)="toggletext()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">{{txt}}</button>
+            </p>
+        </div>
+        <div class="col-md-4 pt-md-4 ps-md-4 pt-3">
+            <img ngSrc="assets/img/iconos/iconos-2.webp" width="86" height="85" class="img-fluid mb-4 mx-auto d-block"/>
+            <h4 class="claro text-center">
+                La postura de la emoción
+            </h4>
+            <p class="gris">
+                Cuando vemos un cuerpo, vemos una estructura que ha transitado por diferentes experiencias. No podemos pasar por alto el hecho de que también reflejamos a través de él nuestro estado mental y emocional. 
+
+            </p>
+        </div>
+        <div class="col-md-4 pt-md-4 ps-md-4 pt-3">
+            <img ngSrc="assets/img/iconos/iconos-3.webp" width="86" height="85" class="img-fluid mb-4 mx-auto d-block"/>
+            <h4 class="claro text-center">
+                Estudio anatómico y biomecánico
+            </h4>
+            <p class="gris">
+                Aprender a reconocer qué es lo que estamos moviendo, cuál es su función biológica y el para qué de la selección de ejercicios, es clave para la reeducación corporal. Necesitamos abrir nuestros ojos internos y conocer nuestro organismo.
+            </p>
+        </div>
+    </div>
+</section> 
+<div class="linea d-none d-sm-none d-md-block"></div>   

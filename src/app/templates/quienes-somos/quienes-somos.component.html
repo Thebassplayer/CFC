@@ -1,0 +1,77 @@
+<section class="bg-lavanda-blanco container-fluid">
+    <h3 class="morado ps-md-5 ps-1 py-md-5 py-2 container">
+        <span class="amarillo">¿Quienes</span> <span class="blanco-lavanda"> somos?</span>
+    </h3>
+    <div class="ps-md-5 pb-5 container">
+        <div class="media-scroller snaps-inline ps-5 pb-5 pb-md-0">
+            <div class="media-element" [ngClass]="derecha ? 'animation' : 'animation-back'">
+                <picture (click)="derechaFn(false)">
+                    <source media="(max-width:764px)" srcset="assets/img/quienes-somos/card-mili-mobile.webp">
+                    <img src="assets/img/quienes-somos/card-mili.webp" alt="" class="img-fluid">
+                </picture>
+                <!--<div class="text-1">
+                    <h4 class="d-none d-sm-none d-md-block">MILAGROS EVA SOMMA<br/><span class="fs-6 helvetica">Co-creadora del método CFC </span></h4>
+                    <div>
+                        <p class="fst-italic bg-card-quienes-somos d-none d-sm-none d-md-block">
+                            "Hoy acompaño a personas a volverse más fuertes y flexibles, abrirse a la escucha de sus propias necesidades, para así tener un estilo de vida más saludable y consciente."
+                        </p>
+                    </div>
+                </div>
+                <div class="text-2">
+                    <div>
+                        <p class="fst-italic bg-card-quienes-somos d-block d-sm-block d-md-none">
+                            "Hoy acompaño a personas a volverse más fuertes y flexibles, abrirse a la escucha de sus propias necesidades, para así tener un estilo de vida más saludable y consciente."
+                        </p>
+                    </div>
+                    <span class="l-chica">
+                        Me dedico a investigar el cuerpo hace ya 9 años y comencé a dar clases de flexibilidad y fuerza hace 
+                        5 años.
+                        <br/><br/>
+                        A lo largo de mi experiencia como entrenadora, llegaban a mi personas con dolencias, limitaciones, y sobre todo con poco registro propioceptivo. Eso me genera el impulso de estudiar al cuerpo humano en profundidad. En la actualidad, trabajo con todo tipo de públicos, ya sean bailarines profesionales, artistas, deportistas, etc. Tanto como todo aquel que quiera revitalizarse y responsabilizarse de su cuerpo. 
+                        <br/><br/>
+                        Durante mi trayectoria, investigación y desarrollo de mis aptitudes, fui integrando diferentes métodos y herramientas, entre ellos estan: Escuela de Circo, Profesorado de Yoga, Biodescodificación, instructorado de flexibilidad, ADM, metodología de Feldenkrais, Ayurveda, etc. 
+                        <br/><br/>
+                        Quisiera mencionar a las escuelas que son los cimientos de mi formación; Circo de las Artes, Ser interior y Flexibilidad Segura. Y también a estos grandes referentes con quienes tomé clases y cursos; Daniela Ortega, Sonia Marra, Paula Escobar, Patricia Ferrara y Myriam Miller (mi terapeuta corporal) a quien estoy infinitamente agradecida por acompañarme a encontrar mi camino.
+                    </span>
+                </div>-->
+            </div>
+            <div class="media-element" [ngClass]="derecha ? 'animation' : 'animation-back'">
+                <picture (click)="derechaFn(true)">
+                    <source media="(max-width:764px)" srcset="assets/img/quienes-somos/card-albana-mobile.webp">
+                    <img src="assets/img/quienes-somos/card-albu.webp" alt="" class="img-fluid">
+                </picture>
+                
+                <!--<div class="text-1">
+                    <h4 class="d-none d-sm-none d-md-block">ALBANA DANILA HERNANDEZ<br/><span class="fs-6 helvetica">Co-creadora del método CFC</span></h4>
+                    <div>
+                        <p class="fst-italic bg-card-quienes-somos d-none d-sm-none d-md-block">
+                            "Mi propuesta es acompañar a aquellas personas que están en búsqueda de un bienestar físico y emocional, con un enfoque integral de todas las herramientas que he recolectado en mi constante camino de desarrollo."
+                        </p>
+                    </div>
+                </div>
+                <div class="text-2">
+                    <div>
+                        <p class="fst-italic bg-card-quienes-somos d-block d-sm-block d-md-none">
+                            "Mi propuesta es acompañar a aquellas personas que están en búsqueda de un bienestar físico y emocional, con un enfoque integral de todas las herramientas que he recolectado en mi constante camino de desarrollo."
+                        </p>
+                    </div>
+                    <span class="l-chica">
+                        Me dedico al estudio y desarrollo de las capacidades del Ser desde hace ya 10 años. Diseño programas de entrenamiento de flexibilidad, fuerza y handstand hace 
+                        4 años. Trabajo con poblaciones de todo tipo, tanto deportistas profesionales, yoguis, bailarines, como personas que quieran mejorar su salud físico, mental 
+                        y emocional.
+                        <br/><br/>
+                        He dedicado mi vida al desarrollo de mis aptitudes. Realicé varios cursos, diplomados y capacitaciones. Entre ellos están: Masoterapia, Escuela de circo, Bioneuroemoción®, Instructorado de Yoga, Entrenamiento de Fuerza, etc.
+                        <br/><br/>
+                        Además tome clases y talleres con grandes referentes del movimiento que me han inspirado y nutrido mucho, cabe hacer mención de algunos de ellos: Martin Grossman, Jesus Guiraldi, Rodrigo Salulima, Martin Fiasche, Luis Mansilla, Ariel Couceiro, Lucas Rubio y Milagros Somma, a quien le doy una especial mención por ser mi Sensei, amiga y socia.
+                    </span>
+                </div>-->
+            </div>
+           
+        </div>
+    </div>
+</section>
+<div class="text-center d-none d-sm-none d-md-block">
+    <button (click)="derechaFn(false)" class="pill" [ngClass]="derecha ? 'pill-active' : 'pill'"></button>
+    <button (click)="derechaFn(true)" class="pill" [ngClass]="derecha ? 'pill' : 'pill-active'"></button>
+</div>
+    

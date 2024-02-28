@@ -1,0 +1,150 @@
+.media-scroller{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 90%;
+    gap:0rem;
+    overflow-x: auto;
+    overscroll-behavior-inline:contain;
+}
+
+.media-element{
+    position: relative;
+    
+}
+
+.media-element > img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    inline-size: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.animation{
+    animation-name: example;
+    animation-duration: 0.5s;
+    
+    animation-fill-mode: forwards;
+}
+.animation-back{
+    animation-name: back;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes example {
+    from {transform: translateX(0%);}
+    to {transform: translateX(-90%);}
+}
+@keyframes back {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(-5%);}
+}
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+.media-scroller::-webkit-scrollbar{
+    width: 4px;
+}
+.media-scroller::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+.media-scroller::-webkit-scrollbar-thumb{
+    background-color:transparent;
+    border-radius: 15px;
+}
+@supports (scrollbar-color: white){
+    * {
+      scrollbar-color: transparent; 
+      scrollbar-width: thin;
+    }
+}
+
+.pill{
+    background-color: var(--morado);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 0.5rem;
+    position: relative;
+    top: -50px;
+    opacity: 1;
+}   
+
+.pill:hover{
+   
+    opacity: 0.5;
+}   
+
+.pill-active{
+    opacity: 0.5;
+}
+
+.text-1{
+    position: absolute;
+    left: 9%;
+    bottom: 12%;
+    width: 40%;
+    color:white;
+}
+
+.text-2{
+    position: absolute;
+    right: 7%;
+    top: 10%;
+    width: 40%;
+    color:white; 
+   
+}
+
+.bg-card-quienes-somos{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+@media screen and (max-width:764px) {
+    .media-scroller{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 100%;
+        gap:1rem;
+        overflow-x: auto;
+        overscroll-behavior-inline:contain;
+    }
+    .media-scroller{
+        grid-auto-columns: 100%;
+        margin-top: 1rem;
+        
+    }
+    .media-element{
+        position: relative;
+        background-color: var(--celeste);
+        border-radius: 15px;
+    }
+   
+    .text-1{
+        position: relative;
+        left: 0%;
+        bottom: 0%;
+        width: 100%;
+        color:white;
+        padding: 0.4rem;
+    }
+    
+    .text-2{
+        position: relative;
+        right: 0%;
+        top: 0%;
+        width: 100%;
+        color:white; 
+        padding:0.5rem;
+       
+    }
+    
+}

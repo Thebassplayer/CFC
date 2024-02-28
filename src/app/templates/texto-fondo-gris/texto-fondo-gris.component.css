@@ -1,0 +1,17 @@
+.redondel{
+    background-color: #F1F1F1;;
+    background-image: url('../../../assets/img/quien/vector-1.png');
+    background-repeat: no-repeat;
+    background-position: 120% 5%;
+    background-origin: border-box;
+   /* background-size: 80%;*/
+}
+@media screen and (max-width: 764px) {
+    .redondel{
+        background-color: #F1F1F1;;
+        background-image: url('../../../assets/img/quien/vector-1.png');
+        background-repeat: no-repeat;
+        background-position:150px -65px;
+        background-origin: border-box;
+    }
+}
